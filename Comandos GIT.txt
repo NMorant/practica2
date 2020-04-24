@@ -1,0 +1,21 @@
+COMANDOS GIT
+Click derecho en la carpeta donde se desea trabajar y pinchar en "Git bash here"
+git init -> Sirve para iniciar git desde la carpeta donde están los archivos
+git status -> Para ver el estado de los archivos de la carpeta
+git add + nombre archivo -> Para añadir un archivo
+    Para agregar todos los archivos a la vez usar git add .
+git config --global user.name + Nombre -> Para saber quien modifica un archivo
+git config --global email + email -> Para saber quien modifica un archivo
+git commit -> Para subir los archivos al servidor -> Abre un editor de textos VIM para escribir algo y guardar (pulsar i + texto + ESC +  :wq)
+    Para no entrar en VIM usar git commit -m "He hecho los siguentes cambios"
+git checkout -- + nombre archivo -> Vuelve al estado anterior, es decir, al último commit que se hizo
+git diff + nombre archivo -> Te dice las diferencias que hay respecto al último commit
+git log -> Log de cambios del código
+Para ignorar un archivo hay que crear otro llamado .gitignore y meter dentro aquellos archivos que no quieras que se tengan en cuenta. Luego añadir .gitignore en git
+git branch + rama -> Se crea otra rama para poder trabajar desde otro lado sin modificar el proyecto inicial
+git checkout + rama -> Se cambia a la rama creada y se empieza a trabajar desde la rama sin modificar el master
+
+SUBIR/BAJAR CÓDIGO A GITHUB (Repositorio).
+git remote add origin https://github.com/NMorant/practica2.git -> Esto sirve para subir el código al repositorio de github
+git push -u origin master -> Meter login NMorant y contraseña O***********u1! y se sube el código
+git clone + URL -> Se baja el código de Github
